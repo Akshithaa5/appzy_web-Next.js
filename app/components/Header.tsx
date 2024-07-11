@@ -15,7 +15,7 @@ const Header = () => {
     <header className="bg-white shadow fixed top-0 left-0 right-0 z-50" id="Home">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <div className="logo ml-20">
-          <Image src="/assets/images/logo.png" alt="Logo" width={100} height={32} className="h-8" />
+          <Image src="/assets/images/Finanzy.png" alt="Logo" width={160} height={32} className="h-6" />
         </div>
         <div className="header-text"></div>
         <ul className="flex">
