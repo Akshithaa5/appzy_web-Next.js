@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useRef } from 'react';
 
 const Footer = () => {
   return (
@@ -14,10 +16,10 @@ const Footer = () => {
       <div className="follow-us">
         <h3 className="text-lg mb-2">Follow Us</h3>
         <div className="footer-social flex gap-4">
-          <a href="facebook.com" className="text-white text-2xl"><i className="fab fa-facebook-f"></i></a>
-          <a href="twitter.com" className="text-white text-2xl"><i className="fab fa-twitter"></i></a>
-          <a href="youtube.com" className="text-white text-2xl"><i className="fab fa-youtube"></i></a>
-          <a href="instagram.com" className="text-white text-2xl"><i className="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" className="text-white text-2xl"><i className="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/?lang=en" className="text-white text-2xl"><i className="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com/" className="text-white text-2xl"><i className="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/accounts/login/?hl=en" className="text-white text-2xl"><i className="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
@@ -61,7 +63,7 @@ const Footer = () => {
 
   </div>
   <div className="footer mt-20">
-    <p className="text-center text-sm">2021 © Zytheme. All Rights Reserved.</p>
+    <p className="text-center text-sm">© 2024 – Website Designed By Akshitha.</p>
     </div>
 </section>
   );

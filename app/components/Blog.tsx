@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useRef } from 'react';
 import Image from 'next/image';
 
 const Blog: React.FC = () => {

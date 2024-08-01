@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 const Pricing: React.FC = () => {
   const [isAnnualBilling, setIsAnnualBilling] = useState<boolean>(false);

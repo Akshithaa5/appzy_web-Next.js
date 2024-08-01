@@ -1,4 +1,7 @@
-import React from 'react';
+"use client";
+
+import React, { useState, useRef } from 'react';
+
 import Image from 'next/image';
 
 const Grow: React.FC = () => {

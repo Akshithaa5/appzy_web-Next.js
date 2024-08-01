@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useRef, useState } from 'react';
 
 const Contact = () => {
   return (
