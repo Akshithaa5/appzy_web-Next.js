@@ -46,4 +46,4 @@ const testimonials: Testimonial[] = [
   }
 ];
 
-export { testimonials };
+export default testimonials;
