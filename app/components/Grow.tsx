@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
 
@@ -15,7 +17,7 @@ const Grow: React.FC = () => {
         <div className="flex justify-center items-center flex-wrap">
           {/* Panel #1 */}
           <div className="process-card p-2 rounded-lg text-center m-4 max-w-xs flex flex-col items-center">
-            <div className="process-phase bg-yellow-200 text-yellow-600 w-25 h-20 flex items-center justify-center text-5xl mb-4 rounded-md">
+            <div className="process-phase bg-yellow-200 text-yellow-600 w-20 h-20 flex items-center justify-center text-5xl mb-4 rounded-md">
               1
             </div>
             <h3 className="text-lg font-bold mb-2">Install the App</h3>
@@ -38,7 +40,7 @@ const Grow: React.FC = () => {
             <Image src="/assets/images/line-bottom.png" alt="Icon" width={400} height={40} />
           </div>
           {/* Panel #3 */}
-          <div className="process-card p-2 rounded-lg  text-center m-4 max-w-xs flex flex-col items-center">
+          <div className="process-card p-2 rounded-lg text-center m-4 max-w-xs flex flex-col items-center">
             <div className="process-phase bg-yellow-200 text-yellow-600 w-20 h-20 flex items-center justify-center text-5xl mb-4 rounded-md">
               3
             </div>
