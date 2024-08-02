@@ -61,7 +61,7 @@ const Footer = () => {
 
   </div>
   <div className="footer mt-20">
-    <p className="text-center text-sm">2021 © Zytheme. All Rights Reserved.</p>
+    <p className="text-center text-sm">© 2024 – Website Designed By Akshitha</p>
     </div>
 </section>
   );
