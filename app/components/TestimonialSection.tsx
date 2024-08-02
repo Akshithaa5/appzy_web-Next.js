@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from 'next/image';
-import { testimonials, Testimonial } from "./Testimonials"; 
+import testimonials, { Testimonial } from "./Testimonials"; // Import default export
 
 const TestimonialSection: React.FC = () => {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState<number>(0);
