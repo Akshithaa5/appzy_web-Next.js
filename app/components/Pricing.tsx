@@ -11,7 +11,7 @@ const Pricing: React.FC = () => {
 
   return (
     <section id="Pricing" className="pricing py-12 bg-gray-100 text-center">
-      <div className="container mx-auto px-22 lg:px-16">
+      <div className="container mx-auto px-6 lg:px-16">
         <h2 className="text-yellow-600 text-sm font-bold mb-2 capitalize">Pricing</h2>
         <h1 className="text-4xl mb-10">Get In Reasonable Price</h1>
         <div className="toggle-container flex items-center justify-center mb-10">
@@ -24,6 +24,7 @@ const Pricing: React.FC = () => {
             className="toggle-input hidden"
             checked={isAnnualBilling}
             onChange={handleToggleChange}
+            aria-checked={isAnnualBilling}
           />
           <label
             htmlFor="toggle"
@@ -40,6 +41,7 @@ const Pricing: React.FC = () => {
           </span>
         </div>
         <div className="pricing-plans flex justify-around flex-wrap">
+          {/* Basic Plan */}
           <div className="pricing-plan bg-white p-8 lg:p-5 m-3 border border-gray-300 rounded-lg shadow-md flex-1 max-w-xs lg:max-w-md">
             <div className="pricing-type flex justify-center items-baseline mb-5">
               <p className="price text-4xl mr-2">${isAnnualBilling ? '120' : '20'}</p>
@@ -56,10 +58,11 @@ const Pricing: React.FC = () => {
             </ul>
             <button className="btn-get-started bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-yellow-600 mx-auto block">Get Started</button>
           </div>
+          {/* Standard Plan */}
           <div className="pricing-plan bg-blue-700 text-white p-8 lg:p-5 m-3 border border-gray-300 rounded-lg shadow-md flex-1 max-w-xs lg:max-w-md">
             <div className="pricing-type flex justify-center items-baseline mb-5">
               <p className="price text-4xl mr-2">${isAnnualBilling ? '150' : '50'}</p>
-              <p className="per text-lg text-white-500">/per {isAnnualBilling ? 'year' : 'month'}</p>
+              <p className="per text-lg text-white">/per {isAnnualBilling ? 'year' : 'month'}</p>
             </div>
             <h3 className="text-2xl mb-2 text-left">Standard</h3>
             <p className="text-lg mb-6 text-left">For Agencies Who Want To Scale Business Globally</p>
@@ -72,6 +75,7 @@ const Pricing: React.FC = () => {
             </ul>
             <button className="btn-get-started bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-yellow-600 mx-auto block">Get Started</button>
           </div>
+          {/* Premium Plan */}
           <div className="pricing-plan bg-white p-8 lg:p-5 m-3 border border-gray-300 rounded-lg shadow-md flex-1 max-w-xs lg:max-w-md">
             <div className="pricing-type flex justify-center items-baseline mb-5">
               <p className="price text-4xl mr-2">${isAnnualBilling ? '500' : '100'}</p>
