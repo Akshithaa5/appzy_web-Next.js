@@ -1,15 +1,17 @@
 "use client";
 
-import React from 'react';
+import React, { useCallback } from 'react';
 import Image from 'next/image';
 
 const Header = () => {
-  const handleFreeTrialClick = () => {
-    const downloadElement = document.getElementById('download');
-    if (downloadElement) {
-      downloadElement.scrollIntoView({ behavior: 'smooth' });
+  const handleFreeTrialClick = useCallback(() => {
+    if (typeof document !== 'undefined') {
+      const downloadElement = document.getElementById('download');
+      if (downloadElement) {
+        downloadElement.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-  };
+  }, []);
 
   return (
     <header className="bg-white shadow fixed top-0 left-0 right-0 z-50" id="Home">
