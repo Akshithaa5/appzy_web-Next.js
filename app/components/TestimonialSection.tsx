@@ -1,6 +1,5 @@
 "use client";
 
-// src/components/TestimonialSection.tsx
 import React, { useState } from "react";
 import Image from 'next/image';
 import { testimonials, Testimonial } from "./Testimonials"; 
