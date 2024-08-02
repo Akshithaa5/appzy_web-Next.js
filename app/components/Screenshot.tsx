@@ -19,7 +19,7 @@ const Screenshots = () => {
     "/assets/images/finance-app.png",
     "/assets/images/new3.png",
     "/assets/images/new1.png",
-    "/assets/images/new .png",
+    "/assets/images/new.png", 
     "/assets/images/3-7.png"
   ];
 
@@ -51,8 +51,8 @@ const Screenshots = () => {
                   <Image
                     src={images[(currentIndex + index) % totalItems]}
                     alt="screenshot"
-                    width={index === 2 ? 350 : 250} // Adjust the width as needed
-                    height={index === 2 ? 600 : 300} // Adjust the height as needed
+                    width={index === 2 ? 350 : 250} 
+                    height={index === 2 ? 600 : 300}
                     className={`animate-move ${index === 2 ? 'z-0' : 'z-20'}`} // Adjust z-index for dark mockup
                     style={{ transition: 'width 0.3s ease-in-out' }}
                   />
